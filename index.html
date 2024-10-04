@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+
+        <button class="tablink" onclick="openPage('todo', this, '#e1acac')" id="defaultOpen">To Do List</button>
+        <button class="tablink" onclick="openPage('shopping', this, '#e1acac')">Shopping List</button>
+
+        <button class="dark-mode" onclick="darkMode()('dark', this, '#e1acac')">Dark Mode</button>
+        <button class="light-mode" onclick="lightMode()('light', this, '#e1acac')">Light Mode</button>
+
+        <div id="todo" class="tabcontent">
+            <h3>To Do List</h3>
+            <p>Create a task list with priority </p>
+        </div>
+        <div id="shopping" class="tabcontent">
+            <h3>Shopping List</h3>
+            <p> List</p>
+        </div>
+
+        <div id="allStarContainers">
+            <div class="star-container">
+                <div class="card">
+                    <span onclick="gfg(1)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfg(2)"
+                        class="star">★
+                    </span>
+                    <span onclick="gfg(3)"
+                        class="star">★
+                    </span>
+                </div>
+                <input type="text" id="task" name="task" placeholder="Task Name">
+                <button class="add" id="add">+</button>
+            </div>
+        </div>
+            
+        <script src="scripts/main.js"></script> 
+    </body>
+</html> 
